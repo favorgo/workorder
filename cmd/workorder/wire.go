@@ -8,12 +8,12 @@ package main
 import (
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
+	"github.com/pipperman/workorder/internal/biz"
+	"github.com/pipperman/workorder/internal/conf"
+	"github.com/pipperman/workorder/internal/data"
+	"github.com/pipperman/workorder/internal/server"
+	"github.com/pipperman/workorder/internal/service"
 	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"workorder/internal/biz"
-	"workorder/internal/conf"
-	"workorder/internal/data"
-	"workorder/internal/server"
-	"workorder/internal/service"
 	//"github.com/go-kratos/kratos/v2/middleware/tracing"
 	"github.com/google/wire"
 )

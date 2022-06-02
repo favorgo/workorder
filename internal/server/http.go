@@ -1,9 +1,9 @@
 package server
 
 import (
-	v1 "workorder/api/helloworld/v1"
-	"workorder/internal/conf"
-	"workorder/internal/service"
+	v1 "github.com/pipperman/workorder/api/workorder/v1"
+	"github.com/pipperman/workorder/internal/conf"
+	"github.com/pipperman/workorder/internal/service"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"

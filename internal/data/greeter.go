@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/go-kratos/kratos/v2/log"
-	"workorder/internal/biz"
+	"github.com/pipperman/workorder/internal/biz"
 )
 
 type greeterRepo struct {

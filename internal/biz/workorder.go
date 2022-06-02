@@ -5,7 +5,7 @@ import (
 
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/log"
-	v1 "workorder/api/helloworld/v1"
+	v1 "github.com/pipperman/workorder/api/workorder/v1"
 )
 
 var (

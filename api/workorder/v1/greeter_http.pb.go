@@ -23,7 +23,7 @@ type OrderHTTPServer interface {
 
 func RegisterOrderHTTPServer(s *http.Server, srv OrderHTTPServer) {
 	r := s.Route("/")
-	r.GET("/helloworld/{name}", _Order_Purchase0_HTTP_Handler(srv))
+	r.GET("/workorder/{name}", _Order_Purchase0_HTTP_Handler(srv))
 }
 
 func _Order_Purchase0_HTTP_Handler(srv OrderHTTPServer) func(ctx http.Context) error {
@@ -62,7 +62,7 @@ func NewOrderHTTPClient(client *http.Client) OrderHTTPClient {
 
 func (c *OrderHTTPClientImpl) Purchase(ctx context.Context, in *HelloRequest, opts ...http.CallOption) (*HelloReply, error) {
 	var out HelloReply
-	pattern := "/helloworld/{name}"
+	pattern := "/workorder/{name}"
 	path := binding.EncodeURL(pattern, in, true)
 	opts = append(opts, http.Operation("/order.v1.Order/Purchase"))
 	opts = append(opts, http.PathTemplate(pattern))
